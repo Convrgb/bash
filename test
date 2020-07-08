@@ -1,0 +1,8 @@
+n=123
+d=2
+while [$n>1]
+do
+if[[(($n%$d)) -eq 1 ]] then
+echo 1 >> num.dat & n=(($n/$d))
+else echo 0 >> num.dat & n=(($n/$d))
+done
